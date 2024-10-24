@@ -71,10 +71,11 @@ public class DscInterfaceHelper {
 //            TODO
             return null;
         }
+        Long dscInfoId = interfaceinfo.getDscId();
 
         String selectSql = createSelectSql(dscInterfaceColumns, selectTime);
 
-        return executeSelectSql(selectSql);
+        return executeSelectSql(selectSql,dscInfoId);
     }
 
     /**
@@ -83,7 +84,7 @@ public class DscInterfaceHelper {
      * @param selectSql
      * @return
      */
-    private String executeSelectSql(String selectSql) {
+    private String executeSelectSql(String selectSql, Long dscInfoId) {
 
 
 //        转为json返回结果

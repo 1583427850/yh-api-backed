@@ -1,7 +1,5 @@
 package xyz.linyh.yhapi.factory;
 
-import io.swagger.models.auth.In;
-import org.aspectj.weaver.ast.Var;
 import xyz.linyh.ducommon.common.DscTypeEnum;
 import xyz.linyh.ducommon.common.ErrorCodeEnum;
 import xyz.linyh.ducommon.exception.BusinessException;
